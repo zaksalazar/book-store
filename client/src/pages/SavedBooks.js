@@ -1,4 +1,4 @@
-import React from "react";
+import React from 'react'
 import { Jumbotron, Container, Card, Button } from "react-bootstrap";
 
 import { useQuery, useMutation } from "@apollo/client";
@@ -41,11 +41,11 @@ const SavedBooks = () => {
 
   return (
     <>
-      <Jumbotron fluid className="text-light bg-dark">
+      <div class="jumbotron" fluid className="text-light bg-dark">
         <Container>
           <h1>Viewing {userData.username}'s books!</h1>
         </Container>
-      </Jumbotron>
+      </div>
       <Container>
         <h2>
           {userData.savedBooks?.length
